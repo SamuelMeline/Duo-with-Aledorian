@@ -34,18 +34,6 @@ $users = [
     ]
 ];
 
-function maximum()
-{
-    $max = 0;
-    foreach ($users as $user) 
-    {
-        if ($user['age'] > $max) {
-            $max = $user['age'];
-        };
-    };
-    return $max;
-};
-
 require 'index.phtml';
 ?>
 
