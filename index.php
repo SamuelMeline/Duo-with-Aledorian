@@ -2,20 +2,20 @@
 
 $users = [
     [
-        'firstname' => 'John', 
-        'lastname' => 'Doe', 
+        'firstname' => 'John',
+        'lastname' => 'Doe',
         'age' => 42,
         'friends' => []
     ],
     [
-        'firstname' => 'Jane', 
-        'lastname' => 'Doe', 
+        'firstname' => 'Jane',
+        'lastname' => 'Doe',
         'age' => 42,
         'friends' => []
     ],
     [
-        'firstname' => 'Jay', 
-        'lastname' => 'Doe', 
+        'firstname' => 'Jay',
+        'lastname' => 'Doe',
         'age' => 17,
         'friends' => [
             [
@@ -34,4 +34,22 @@ $users = [
     ]
 ];
 
+function maximum()
+{
+    $max = 0;
+    foreach ($users as $user) 
+    {
+        if ($user['age'] > $max) {
+            $max = $user['age'];
+        };
+    };
+    return $max;
+};
+
 require 'index.phtml';
+?>
+
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, alias.</p>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, alias.</p>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, alias.</p>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, alias.</p>
